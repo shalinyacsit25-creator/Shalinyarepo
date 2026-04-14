@@ -1,21 +1,21 @@
 //WAP to enter a year and check whether it is a leap year or not
-// #include<stdio.h>
-// int main(){
-//    int y;
-//    printf("Enter the year:");
-//    scanf("%d",&y);
-//    if (y%4==0)
-//    {
-//       printf( "Its a leap year");
+#include<stdio.h>
+int main(){
+   int y;
+   printf("Enter the year:");
+   scanf("%d",&y);
+   if (y%4==0)
+   {
+      printf( "Its a leap year");
    
-//    }
-//    else{
-//       printf("Not a leap year");
-//    }
+   }
+   else{
+      printf("Not a leap year");
+   }
    
-// return 0;
-// }
- //}
+return 0;
+}
+ }
 // WAP to input a number and check whether it is odd or even without using else statement
 // #include <stdio.h>
 

@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Build artifacts
+*.dSYM/
+output/
+exam
+Jhapa
+lab4
+project
+testing
+-p/
+
+# VS Code
+.vscode/launch.json
+
+# Executables
+a.out
+*.out

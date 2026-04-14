@@ -13,7 +13,7 @@
     // }
     // return 0;
     // }
-   //WAP to count even and odd elements in an array
+//    WAP to count even and odd elements in an array
     // #include<stdio.h>
     // int main(){
     //     int arr[5],i,even_count=0,odd_count=0;

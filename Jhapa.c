@@ -367,7 +367,7 @@
 // #include<stdio.h>
 // int main(){
 //   int arr[2][3]={{30,28,52},{40,36,29}};
-//   int j,i;
+//   int j,i;  . .  .  
 //   for(i=0;i<2;i++){
 //     for( j=0;j<3;j++){
 //       printf("%d ",arr[i][j]);
@@ -2047,4 +2047,49 @@
 //     printf("Written in file successfully");
 //     fclose(fp);
 //     return 0;   
+// }
+//
+// #include<stdio.h>
+// int main(){
+//     int num1=5,num2=2,add; //intializing values
+//     add=num1+num2; //Calculating sum
+//     printf("The sum of %d and %d is %d",num1,num2,add);//printing output
+//     return 0;
+// }
+//
+// #include<stdio.h>
+// int main(){
+ //     //intializing variables
+//     int num1=5,num2=10,sum,sub,mul;
+//     float div;
+//      //calculating sum,div,product,sub
+//     sum=num1+num2;
+//     sub=num1-num2;
+//     mul=num1*num2;
+//     div=(float)num1/num2;
+//  //displaying result
+//     printf("Sum=%d\n",sum);
+//     printf("Subtraction=%d\n",sub);
+//     printf("Multiplication=%d\n",mul);
+//     printf("Division=%0.2f\n",div);
+//     return 0;
+// }
+//  WAP to swap two numbers 
+//   #include<stdio.h>
+//   int main(){
+//     int num1=10,num2=20,temp=0;
+//     temp=num1;
+//     num1=num2;
+//     num2=temp;
+//     printf("After swaping num1=%d and num2=%d",num1,num2);
+//     return 0;
+//   }
+//  WAP to calculate simple interest
+// #include<stdio.h>
+// int main(){
+//     int pri=1000,ti=2,rate=5;
+//     float simple_interest;
+//     simple_interest=(pri*ti*rate)/100;
+//     printf("Simple interest is %0.2f",simple_interest   );
+//     return 0;
 // }

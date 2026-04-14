@@ -1,85 +1,137 @@
-/*Project
-In this project we will store the detsils of 24 students and find the highest and lowest age student and display them in rectangle
-1.Roll no
-2.Name
-3.Address
-4.Age
-5.Gender
-using while loop and file handling
-*/
-// #include <stdio.h>
-// // creating structure to store details of different type
-// struct Student
-// {
-//     int roll;
-//     char name[50];
-//     char address[50];
-//     char gender;
-//     int age;
-// };
-// int main()
-// {
-//     // creating object of student
-//     struct Student std[10];
-//     // accessing the file we make a file pointer
-//     FILE *fp;
-//     // to initialize loop
-//     int i;
-//     // opeing a file
-//     /* fp = fopen("studentData.txt", "w");
-//     // writing details to the file
-//     printf("Enter details of students : \n");
-//     // for 10 students details we use loop
-//     for (i = 0; i < 10; i++){
-//         printf("ROll : ");
-//         scanf("%d", &std[i].roll);
-//         printf("\nName : ");
-//         scanf("%s", std[i].name);
-//         printf("\nAddress :");
-//         scanf("%s", std[i].address);
-//         printf("\nGender : ");
-//         scanf(" %c", &std[i].gender);
-//         printf("\nAge : ");
-//         scanf("%d", &std[i].age);
-//         // writing whole line to the file
-//         fprintf(fp, "%d\t%s\t%s\t%c\t%d\n", std[i].roll, std[i].name, std[i].address, std[i].gender, std[i].age);
-
-//     }
-//     printf("Written in file successfully.");
-//     // closeing the file
-//     fclose(fp); */
-
-//     fp = fopen("student.txt", "r");
-//     // checking if file exists or not
-//     if (fp == NULL)
+//WAP to enter the details of the teachers and display the teacher with highest and lowest salary and count teachers per department.
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    int n,i;
+    printf("Enter the number of teachers:");
+    scanf("%d",&n);
+    char name[n][20],dept[n][20];
+    float salary[n];
+for(i=0;i<n;i++)
+{
+    printf("Enter the name of teacher %d:",i+1);
+    scanf("%s",name[i]);
+    printf("Enter the department of teacher %d:",i+1);
+    scanf("%s",dept[i]);
+    printf("Enter the salary of teacher %d:",i+1);
+    scanf("%f",&salary[i]);
+}
+   int max_index=0,min_index=0;
+   for(i=1;i<n;i++)
+   {
+    if(salary[i]>salary[max_index])
+    {
+        max_index=i;
+    }
+    if(salary[i]<salary[min_index])
+    {
+        min_index=i;
+    }
+   }
+   printf("Teacher with highest salary:\n");
+   printf("Name: %s\n",name[max_index]);
+   printf("Department: %s\n",dept[max_index]);
+   printf("Salary: %.2f\n",salary[max_index]);
+   printf("Teacher with lowest salary:\n");
+   printf("Name: %s\n",name[min_index]);
+   printf("Department: %s\n",dept[min_index]);
+   printf("Salary: %.2f\n",salary[min_index]);
+//     int count[10]={0},j;
+//     for(i=0;i<n;i++)
 //     {
-//         printf("Unable to find file.\n");
-//     }
-//     else
-//     {
-//         char line[256];
-//         printf("Details are :\n");
-//         i = 0;
-//         while (i < 10 && fgets(line, sizeof(line), fp))
+//         for(j=0;j<i;j++)
 //         {
-//             // each line should be: roll\tname\taddress\tgender\tage\n
-//             if (sscanf(line, "%d\t%49[^	]\t%49[^	]\t %c\t%d", &std[i].roll,
-//                        std[i].name, std[i].address, &std[i].gender, &std[i].age) == 5)
+//             if(strcmp(dept[i],dept[j])==0)
 //             {
-//                 printf("Roll : %d\tName : %s\tAddress : %s\tGender : %c\tAge : %d\n",
-//                        std[i].roll, std[i].name, std[i].address, std[i].gender, std[i].age);
-//                 i++;
-//             }
-//             else
-//             {
-//                 printf("Skipping malformed line: %s", line);
+//                 count[j]++;
+//                 break;
 //             }
 //         }
-//         if (i == 0)
+//         if(j==i)
 //         {
-//             printf("No valid records found.\n");
+//             count[i]++;
 //         }
 //     }
-//     fclose(fp);
+//     printf("Department-wise teacher count:\n");
+//     for(i=0;i<n;i++)
+//     {
+//         if(count[i]>0)
+//         {
+//             printf("Department: %s, teachers: %d\n",dept[i],count[i]);
+//         }           
+//     }
 //     return 0;
 // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
